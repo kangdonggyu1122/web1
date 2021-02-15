@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../smartworks/change.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script></head>
+<body>
+    <div id="menu">
+        <div class="logo">
+            <div>
+                <div class="logo1">AIROV</div>
+                <div>Homepage Administrator</div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="../imploy/imploy/imploy.html" id="imploy">채용알림</a>
+            <a href="" id="notice">알림</a>
+            <a href="" id="admin-info">Admin info.</a>
+        </div>
+        <div class="logout">
+            <button id="logoutbt">Logout</button>
+        </div>
+    </div>
+    <div id="codecontainer">
+        <div class="hi">
+            <div id="admin">AIROV Homepage Admin Code</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="save"><button disabled="true" id="button1">저장</button></div>
+        </div>
+        <div class="code">관리자 코드 현재
+            <div></div>
+            <input type="text" id="text1">
+            <div></div>
+        </div>
+        <div class="code">관리자 코드 변경
+            <div></div>
+            <input type="password" id ="text2">
+            <div></div>
+        </div>
+    </div>
+</body>
+
+<!-- 입력시 버튼 활성화 -->
+<script type="text/javascript">
+    $(function(){
+        $("#text2").on('input',function(){
+            if($("#text2").val()=='')
+                $("#button1").attr("disabled",true);
+            else
+                $("#button1 ").attr("disabled",false);
+        });
+    })
+
+</script>
+
+</html>

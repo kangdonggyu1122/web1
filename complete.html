@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../smartworks/complete.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    h2
+    <div id="menu">
+        <div class="logo">
+            <div>
+                <div class="logo1">AIROV</div>
+                <div>Homepage Administrator</div>
+            </div>
+        </div>
+        <BODY onLoad="Timer();">
+            <div id="choonDiv"></div>
+        <div class="_menu">
+            <a href="../imploy/imploy/imploy.html" id="imploy">채용알림</a>
+            <a href="" id="notice">알림</a>
+            <a href="" id="admin-info">Admin info.</a>
+        </div>
+        <div class="logout">
+            <button id="logoutbt">Logout</button>
+        </div>
+    </div>
+    <div id="codecontainer">
+        <div class="dat1">
+            <div id="airov">Admin Code가 변경되었습니다.<br>해당 화면에서 로그아웃됩니다.<br>변경한 Admin Code로 로그인해주세요.</div>
+        </div>
+        </div>
+    </div>
+</body>
+
+<!-- 페이지 3초후이동 -->
+<SCRIPT LANGUAGE="JavaScript"> 
+ 
+    function Timer() { 
+    setTimeout("locateKap()",10000); 
+     } 
+    function locateKap(){
+     location.replace("admin.html");
+    }
+    
+</SCRIPT> 
+<script language='javascript'>
+    cnt = 3; // 카운트다운
+    function countdown() {
+    if(cnt == 0){
+              // 시간이 0일경우
+         locateKap();
+    }else {
+        // 시간남았을때 카운트다운지속
+        document.all.choonDiv.innerHTML ;
+        setTimeout("countdown()",1000);
+    cnt--;
+    }
+    }
+</script>
+
+<script>
+countdown();
+</script>
+
+</html>

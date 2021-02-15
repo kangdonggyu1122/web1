@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../smartworks/admin.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>   
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <div id="frame">
+        <div class="_leftBox">
+            <div></div>
+            <div></div>
+            <div>WELCOME</div>
+            <div>AIROV</div>
+            <div>Administrator</div>
+            <div></div>
+            <div></div>
+        </div>
+    <div class="_rightBox">
+        <div id="Airov">AIROV 홈페이지 관리자 페이지입니다.<br>관리자 코드번호를 입력해주세요.</div>
+        <div id="Empty"></div>
+        <div id="Container">
+            <input type="Password" name="id" id="AdminCode" placeholder="Admin Code">
+            <button disabled="true" id="OK">OK</button>
+            <div class="_notthing"></div>
+        </div>
+    </div>
+    </div>
+<div></div>   
+</body>
+
+<!-- 입력시 버튼활성화 -->
+<script type="text/javascript">
+    $(function(){
+        $("#text").on('input',function(){
+            if($("#text").val()=='')
+                $("#text1").attr("disabled",true);
+            else
+                $("#text1").attr("disabled",false);
+        });
+    })
+
+</script>
+
+<!-- 비밀번호 -->
+<script>
+document.getElementById('text1').onclick = function() {
+    var ID = document.getElementById('text').value;
+    if (ID === "1234" | ID === "1111") {
+        
+        location.href = "complete.html";
+
+    }
+    else {
+        
+        location.href = "adminX.html";
+
+    }
+}
+</script>
+
+</html>
